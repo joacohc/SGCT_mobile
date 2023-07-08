@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo4" />
+
+    <ImageButton
+        android:id="@+id/logoffButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:background="@null"
+        android:contentDescription="Logoff"
+        android:padding="16dp"
+        android:src="@drawable/logout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30FFFFFF"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text=">Sistema de Gestión de Crianza de Terneras"
+            android:textColor="#000000"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/subtitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="#10FFFFFF"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="Seleccione una opción para operar:"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnListarTerneras"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:alpha="0.6"
+            android:background="@drawable/rounded_button"
+            android:text="Gestionar Terneras"
+            android:textSize="16sp"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/btnListarEnfPadecidas"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:alpha="0.6"
+            android:background="@drawable/rounded_button"
+            android:text="Listar Enfermedades Padecidas Por Terneras"
+            android:textSize="16sp"
+            android:padding="11dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

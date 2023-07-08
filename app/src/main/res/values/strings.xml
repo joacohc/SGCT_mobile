@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SGCT_Mobile</string>
+
+    <array name="razas">
+        <item>HOLANDO</item>
+        <item>JERSEY</item>
+        <item>SIMMENTAL</item>
+        <item>HOLSTEIN</item>
+        <item>NORMANDO</item>
+    </array>
+
+    <array name="partos">
+        <item>NATURAL</item>
+        <item>CESAREA</item>
+    </array>
+
+</resources>

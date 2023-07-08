@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCC99"
+    tools:context=".TerneraActivity">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/backButton"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@id/backButton"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="ALTA DE TERNERA: "
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo6" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-2dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/terneraIdEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/caravanaTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caravana Ternera: "
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/caravanaEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:alpha="0.5"
+                android:autofillHints=""
+                android:background="@drawable/rounded_button"
+                android:digits="0123456789"
+                android:hint="Ingrese una caravana para la ternera"
+                android:inputType="number"
+                android:maxEms="5"
+                android:maxLength="5"
+                android:padding="6dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/caravanaPadreTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:maxEms="5"
+                android:maxLength="5"
+                android:text="Caravana Padre: "
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/caravanaPadre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:alpha="0.5"
+                android:autofillHints=""
+                android:background="@drawable/rounded_button"
+                android:digits="0123456789"
+                android:hint="Ingrese la caravana del padre"
+                android:inputType="number"
+                android:maxEms="5"
+                android:maxLength="5"
+                android:padding="6dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/caravanaMadreTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caravana Madre: "
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/caravanaMadre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:alpha="0.5"
+                android:autofillHints=""
+                android:background="@drawable/rounded_button"
+                android:digits="0123456789"
+                android:hint="Ingrese la caravana de la madre"
+                android:inputType="number"
+                android:maxEms="5"
+                android:maxLength="5"
+                android:padding="6dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pesoNacimientoTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peso de Nacimiento: "
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/pesoNacimientoEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:alpha="0.5"
+                android:autofillHints=""
+                android:background="@drawable/rounded_button"
+                android:digits="0123456789."
+                android:hint="Ingrese el peso al nacer"
+                android:inputType="number"
+                android:maxEms="4"
+                android:maxLength="4"
+                android:padding="6dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="377dp"
+                android:layout_height="164dp">
+
+                <LinearLayout
+                    android:layout_width="202dp"
+                    android:layout_height="162dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/razaTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Raza: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/razasSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="6dp"
+                        android:alpha="0.5"
+                        android:background="@drawable/rounded_button"
+                        android:entries="@array/razas"
+                        android:padding="2dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/fechaNacTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de Nacimiento: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/fechaNacEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:alpha="0.5"
+                        android:background="@drawable/rounded_button"
+                        android:focusableInTouchMode="false"
+                        android:hint="Ingrese fecha"
+                        android:inputType="date"
+                        android:padding="6dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="177dp"
+                    android:layout_height="147dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tipoParto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tipo de Parto: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/partoSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="6dp"
+                        android:alpha="0.5"
+                        android:background="@drawable/rounded_button"
+                        android:entries="@array/partos"
+                        android:padding="2dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/fechaAltaTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de Alta: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/fechaAltaEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:alpha="0.5"
+                        android:background="@drawable/rounded_button"
+                        android:focusableInTouchMode="false"
+                        android:hint="Ingrese fecha"
+                        android:inputType="date"
+                        android:padding="6dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/botonEnviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:background="@drawable/rounded_button"
+                android:text="GUARDAR TERNERA" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
